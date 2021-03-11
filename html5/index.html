@@ -1,1 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>.fdv{} wiki - HTML</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="FDV_HTML_sidenavbar.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="FDV_HomePage.html" id="home">.fdv{} wiki</a>
+
+        <ul class="menu">
+            <!-- First level menu -->
+            <li class="container hassubs"><a href="#">HTML</a>
+                <ul class="dropdown">
+                    <li class="subs1"><a href="#key_shorcuts">Keyboard Shorcuts</a></li>
+                    <li class="subs1 hassubs"><a href="#htmlelements">Types of HTML elements</a>
+                        <ul class="dropdown subs2">
+                            <li class="subs2"><a href="#inlinel">Inline elements</a></li>
+                            <li class="subs2"><a href="#blockel">Block elements</a></li>
+                        </ul>
+                    </li>
+                    <li class="subs1 hassubs"><a href="#textform">Text formatting</a>
+                        <ul class="dropdown subs2">
+                            <li class="subs2"><a href="#navigation">Navigazione [<i>nav</i>]</a></li>
+                            <li class="subs2"><a href="#thematic_break">Thematic Break [<i>hr</i>]</a></li>
+                            <li class="subs2"><a href="#maincont">Main content [<i>main</i>]</a></li>
+                            <li class="subs2"><a href="#par">Paragraph [<i>p</i>]</a></li>
+                            <li class="subs2"><a href="#sec">Section [<i>section</i>]</a></li>
+                            <li class="subs2"><a href="#divisor">Content Division [<i>div</i>]</a></li>
+                            <li class="subs2"><a href="#span_container">Span container [<i>span</i>]</a></li>
+                            <li class="subs2"><a href="#line_breaker">Line Breaker [<i>br</i>]</a></li>
+                            <li class="subs2"><a href="#art">Article [<i>article</i>]</a></li>
+                            <li class="subs2"><a href="#sup_sub">Superscript <i>[sup]</i> Subscript <i>[sub]</i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="subs1 hassubs"><a href="#tables">Tables and Forms</a>
+                        <ul class="dropdown subs2">
+                            <li class="subs2"><a href="#simple-table">Tables <i>[table]</i></a></li>
+                            <li class="subs2"><a href="#forms">Forms <i>[form]</i></a></li>
+                        </ul>
+                    </li>
+                    <li class="subs1 hassubs"><a href="#accessibility">Accessibility</a>
+                        <ul class="dropdown subs2">
+                            <li class="subs2"><a href="#accheadings">Headings</a></li>
+                            <li class="subs2"><a href="#acctags">Tags</a></li>
+                            <li class="subs2"><a href="#accimage">Accessibility and Images</a></li>
+                            <li class="subs2"><a href="#accaudio">Audio elements</a></li>
+                            <li class="subs2"><a href="#accfig">Fig Element and Caption</a></li>
+                            <li class="subs2"><a href="#acclabel">Label</a></li>
+                            <li class="subs2"><a href="#accfieldset">Fieldset</a></li>
+                            <li class="subs2"><a href="#accdate">Date</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="container hassubs"><a href="file:///C:/Users/feder/OneDrive/Dev/FDV%20Wiki/FDV_CSS.html"
+                    target="_blank">CSS</a>
+            </li>
+            <li class="container hassubs subs2"><a href="#">Javascript</a></li>
+        </ul>
+        <br style="clear: both;">
+    </nav>
+
+
+    <div class="pagecontainer">
+        <header class="header">
+            <img src="icons/HTML5.png" alt="HTML5 icon">
+            <h1 id="headertitle">HTML section</h1>
+        </header>
+
+        <div class="maincontent">
+
+            <article>
+                <h2 id="key_shorcuts">Keyboard Shorcuts (VSCode on Windows<sup>1</sup>)<span><a href="#top"
+                            class="gobacklink">[Go
+                            back]</a></span></h2>
+                <p class="article">
+                    Iniziamo dalle basi: le scorciatoie da tastiera! Queste scorciatoie servono a renderci la vita più
+                    facile e
+                    ridurre lo stress durante la scrittura del nostro codice.
+                <ul>
+                    <li><b>!</b> automatically creates HTML document schema with Head and Body</li>
+                    <li><b>CTRL + ù</b> to comment/uncomment a row</li>
+                    <li><b>CTRL + MAIUSC + p</b> to access available commands</li>
+                </ul>
+                </p>
+                <p>Un altro "trucco" interessante è quello che ci permette di creare degli snippet di codice
+                    (all'interno
+                    del
+                    nostro codice) e mostrarlo a video nella nostra pagina web. Il meccanismo è un po' farraginoso ma ci
+                    permette di realizzare pagine più complete e anche visibilmente accattivanti.</p>
+                <p>Se volessi farvi vedere un esempio di codice e dovessi scriverlo rispettando la sintassi HTML (o
+                    CSS),
+                    vedreste solo il risultato finale e non avreste la possibilità di copiarlo. Esiste però una
+                    scorciatoia.
+                </p>
+                <p>Innanzitutto devo inserire: <br> &lt;pre&gt; <br> &lt;/pre&gt; <br> All'interno scriverò il mio
+                    codice,
+                    sostituendo il carattere "<" con "&l t" e il carattere ">" con "&g t" <sup>2</sup>. </p>
+                <div class="sub_container">
+                    <sub>1This shorcuts are meant for the ITA keyboard layout</sub> <br>
+                    <sub>2While using this trick, do not use any space between the characters</sub>
+                </div>
+                </p>
+            </article>
+            <hr>
+            <article>
+                <h2 id="htmlelements">Types of HTML elements<span><a href="#top" class="gobacklink">[Go
+                            back]</a></span></h2>
+                <p>In questa sezione vedremo quali sono i differenti tipi di elementi HTML e come si comportano. Questi
+                    elementi
+                    saranno poi ripresi nei paragrafi successivi e all'interno della sezione CSS, quando analizzeremo i
+                    modi
+                    con
+                    cui possono essere "manipolati".</p>
+                <h3 id="inlinel">Inline elements</h3>
+                <p>Sono gli elementi che occupano <b>soltanto lo spazio di cui hanno bisogno</b>. Quindi, se due in-line
+                    elements
+                    vengono inseriti in successione, nella pagina verranno visualizzati uno di seguito all'altro. Alcuni
+                    esempi
+                    di <b>inline
+                        elements</b>:
+                <ul>
+                    <li>
+                        &lta&gt &lt/a&gt
+                    </li>
+                    <li>
+                        &ltb&gt &lt/b&gt
+                    </li>
+                    <li>
+                        &ltbr&gt
+                    </li>
+                    <li>
+                        &ltbutton&gt &lt/button&gt
+                    </li>
+                    <li>
+                        &lti&gt &lt/i&gt
+                    </li>
+                    <li>
+                        &ltimg&gt
+                    </li>
+                    <li>
+                        &ltinput&gt
+                    </li>
+                    <li>
+                        &ltlabel&gt &lt/label&gt
+                    </li>
+                    <li>
+                        &ltspan&gt &lt/span&gt
+                    </li>
+                    <li>
+                        &ltu&gt &lt/u&gt
+                    </li>
+                </ul>
+                Quindi, se ad esempio inserisco due ancora tag (&lt;a&gt;) o link, otterrò:
+                <a href="https://it.wikipedia.org/">I AM A LINK TO WIKIPEDIA</a>
+                <a href="about.html">I AM A LINK TO ANOTHER FILE</a><br>
+                <p>Anche se nel mio documento HTML sono scritti su due righe separate.</p>
+
+
+                <p><span class="highlight">Here's the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">full
+                            list</a> of inline elements.</span></p>
+
+                <h3 id="blockel">Block elements</h3>
+                <p>Sono gli elementi che occupano <b>ciascuno un intero blocco della pagina</b>.anche se scritti
+                    consecutivamente, non sopportano un afficamento. Sono esempi di block elements gli header (h1, h2,
+                    h3,
+                    ...)
+                    e il paragrafo (p).</p>
+            </article>
+            <hr>
+            <article>
+                <h2 id="textform">Text Formatting<a href="#top" class="gobacklink">[Go
+                        back]</a></span></h2>
+                <p class="article">
+                    In questa sezione vedremo quali sono le regole minime per formattare nel modo corretto il nostro
+                    codice
+                    HTML. Per ottenere del <i>buon</i> codice ci sono alcuni principi base che vanno seguiti, quasi alla
+                    lettera.
+                </p>
+                <p>Innanzitutto il codice deve essere semplice da leggere da un occhio umano. Cercheremo di affrontare
+                    in
+                    maniera sintetica l'argomento del <b>semantic HTML</b>.</p>
+                <p>Un codice chiaro, semplice e ben scritto agevola poi la sua <u>manutenibilità</u>. Pensatela come un
+                    favore che state facendo al vostro io del futuro e ad eventuali altri programmatori che potrebbero
+                    trovarsi a doverlo gestire in qualche modo. Più semplice e chiaro sarà il codice e più facile sarà
+                    manutenerlo. </p>
+                <p>Terzo aspetto fondamentale per cui è fondamentale progettare bene il proprio codice, evitando quello
+                    che
+                    in gergo viene chiamato <i><a href="https://en.wikipedia.org/wiki/Spaghetti_code">spaghetti
+                            code</a></i>
+                    e altre aberrazioni simili, è la sua resa e <b>fruibilità</b> da parte dell'utente finale. E'
+                    davvero
+                    difficile (per non dire impossibile) che un codice "sporco" e confuso dia vita a pagine ordinate,
+                    accattivante e facciano venir voglia di continuare la navigazione. Di solito le due cose vanno di
+                    pari
+                    passo. Esamineramo quindi alcuni degli elementi principali che ci aiutano ad organizzare al meglio
+                    la
+                    nostra pagina HTML.</p>
+
+                <h3 id="semantic">Semantic HTML</h3>
+                <p></p>
+
+                <h3 id="maincont">Main content <i>[&ltmain&gt]</i></h3>
+                <p class="sint"><b>Sintax:</b> &ltmain&gt &lt/main&gt</p>
+                <p class="des"><b>Description:</b> è il <b>contenitore principale</b> della pagina all’interno di
+                    &ltbody&gt
+                    &lt/body&gt. In questa sezione del documento HTML vanno inseriti <u>solo</u> i contenuti principali,
+                    quelli che saranno poi trattati ed espansi nel resto della
+                    pagina.</p>
+
+                <h3 id="navigation">Navigation <i>[&ltnav&gt]</i></h3>
+                <p class="sint"><b>Sintax:</b> &ltnav&gt &lt/nav&gt</p>
+                <p class="des"><b>Description:</b> l'elemento nav si usa per marcare una sezione che contiene
+                    <b>link di
+                        navigazione</b>, come ad esempio la
+                    header bar di un blog in cui sono inseriti i link di navigazione interna per le varie sezioni.
+                </p>
+
+                <p><span class="highlight">If you want to read something more about the &ltnav&gt element, here's the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">perfect
+                            guide </a> for you.</span></p>
+
+
+                <h3 id="par">Paragraph <i>[&ltp&gt]</i></h3>
+                <p class="sint"><b>Sintax:</b> &ltp&gt &lt/p&gt</p>
+                <p class="des"><b>Description:</b> Crea un paragrafo entro cui inserire il testo/codice. Il
+                    paragrafo
+                    apparirà come una sezione ben definita del testo o contenuto della pagina. Può contenere qualsiasi
+                    tipo
+                    di elemento, testo, immagini, ... .
+
+                <p><span class="highlight">If you want to read something more about the &ltp&gt element, here's the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">perfect
+                            guide </a> for you.</span></p>
+
+                <h3 id="sec">Section <i>[&ltsection&gt]</i></h3>
+                <p class="sint"><b>Sintax:</b> &ltsection&gt &lt/section&gt</p>
+                <p class="des"><b>Description:</b> Rappresenta una sezione stand alone. Non ha impatti sulla
+                    visualizzazione
+                    della pagina. E' un semplice contenitore per organizzare meglio il codice e renderlo più leggibile.
+                    Così
+                    come un menù di navigazione è contenuto in &ltnav&gt &lt/nav&gt, così, ad esempio, i risultati di
+                    una
+                    ricerca possono essere contenuti in una sezione specifica. </p>
+
+                <p><span class="highlight">If you want to read something more about the &ltsection&gt element, here's
+                        the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
+                            target="_blank">perfect
+                            guide </a> for you.</span></p>
+
+                <h3 id="divisor">Content Division <i>[&ltdiv&gt]</i></h3>
+                <p class="sint"><b>Sintax:</b> &ltdiv&gt &lt/div&gt</p>
+                <p class="des"><b>Description:</b> è un <b>container generico</b> di tipo <b>block</b> e non ha un
+                    layout
+                    definito. Non rappresenta nulla in sé e per sé ed è usato per raggruppare contenuti. In CSS si usano
+                    poi
+                    gli attributi di tipo <i>class</i> o <i>id</i> per arricchirlo e renderlo.
+                </p>
+
+                <p><span class="highlight">If you want to read something more about the &ltdiv&gt element, here's
+                        the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">perfect
+                            guide </a> for you.</span></p>
+
+                <h3 id="span_container">Span - Inline container <i>[&ltspan&gt]</i></h3>
+                <p class="sint"><b>Sintax:</b> &ltspan&gt &lt/span&gt</p>
+                <p class="des"><b>Description:</b> è un <b>container generico</b> di tipo <b>inline</b>. Può essere
+                    usato
+                    per raggruppare contenuti, ad esempio, per tipologia. È simile a div ma, mentre div è di tipo block
+                    e
+                    quindi non ammette altri contenuti affiancati, span è di tipo inline.</p>
+
+                <p><span class="highlight">If you want to read something more about the &ltspan&gt element, here's
+                        the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">perfect
+                            guide </a> for you.</span></p>
+
+                <h3 id="art">Article <i>[&ltarticle&gt]</i></h3>
+                <p class="sint"><b>Sintax:</b> &ltarticle&gt &lt/article&gt</p>
+                <p class="des"><b>Description:</b> è un <b>contenitore di testo</b> in un documento, pagina,
+                    applicazione o
+                    sito pensato per essere indipendente, distribuibile e riutilizzabile. Alcuni esempi sono l'articolo
+                    di
+                    un blog, di un giornale, un commento inserito da un utente, un widget, ... . <br>
+                    Ogni elemento di tipo &ltarticle&gt &lt/article&gt dovrebbe avere un header e un paragrafo.</p>
+
+                <h3>Compare HTML elements</h3>
+                <p>Alcuni degli elementi descritti sopra possono essere usati in maniera intercambiabile...sbagliando!
+                    Non
+                    tutti i contenitori possono svolgere la stessa funzione all'interno del nostro codice e possono
+                    confondere gli <b>screen reader</b>, peggiorando parecchio l'esperienza utente.</p>
+                <p>Proviamo a confrontarne alcuni per capire le differenze:
+                <ul id="el_compare">
+                    <li><b>&ltdiv&gt</b>: è l'elemento più generico e non ha alcun significato particolare. Lo si
+                        utilizza
+                        per raggruppare elementi non correlati semanticamente;</li>
+                    <li><b>&ltsection&gt</b>: elemento più specifico di &ltdiv&gt, serve per raggruppare elementi che
+                        insieme hanno un significato ben chiaro per l'utente finale;</li>
+                    <li><b>&ltarticle&gt</b>: elemento ancora più specifico, rappresenta una sezione indipendente della
+                        pagina e in linea di massima il suo contenuto è indipendente, ri-utilizzabile e distribuibile
+                    </li>
+                </ul>
+                </p>
+                <p>Ok, adesso possiamo andare avanti.</p>
+
+                <h3 id="thematic_break">Thematic Break <i>[&lthr&gt]</i></h3>
+                <p class="sint"><b>Sintax:</b>&lthr&gt</p>
+                <p class="des"><b>Description:</b> crea una semplice riga di <b>interruzione</b> tra una sezione e
+                    l'altra
+                    del
+                    documento.</p>
+
+                <p><span class="highlight">If you want to read something more about the &lthr&gt element, here's
+                        the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank">perfect
+                            guide </a> for you.</span></p>
+
+                <h3 id="line_breaker">Line breaker <i>[&ltbr&gt]</i></h3>
+                <p class="sint"><b>Sintax: </b>&ltbr&gt</p>
+                <p class="des"><b>Description:</b> è un <b>inline breaker</b>, serve per controllare la posizione
+                    il testo,
+                    ad esempio una poesia, nel modo corretto.</p>
+                <div class="grid_container">
+                    <p>Ad esempio, se inserissi il contenuto di questa poesia senza <i>line breaker</i>, otterrei questo
+                        risultato: <br>
+                        <i>Tyger Tyger, burning bright,
+                            In the forests of the night;
+                            What immortal hand or eye,
+                            Could frame thy fearful symmetry?
+
+                            In what distant deeps or skies.
+                            Burnt the fire of thine eyes?
+                            On what wings dare he aspire?
+                            What the hand, dare seize the fire?</i>
+                    </p>
+
+                    <p>Ma io invece voglio questo: <br>
+                        <i>Tyger Tyger, burning bright, <br>
+                            In the forests of the night; <br>
+                            What immortal hand or eye, <br>
+                            Could frame thy fearful symmetry? <br>
+
+                            In what distant deeps or skies. <br>
+                            Burnt the fire of thine eyes? <br>
+                            On what wings dare he aspire? <br>
+                            What the hand, dare seize the fire? <br></i>
+                    </p>
+                </div>
+
+                <p><span class="highlight">If you want to read something more about the &ltbr&gt element, here's
+                        the
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="_blank">perfect
+                            guide </a> for you.</span></p>
+
+                <h3 id="sup_sub">Superscript <i>[&ltsup&gt]</i> and Subscript <i>[&ltsub&gt]</i></h3>
+                <p class="sint"><b>Sintax: </b>&ltsup&gt &lt/sup&gt ; &ltsub&gt &lt/sub&gt</p>
+                <p class="des"><b>Description:</b> <br>
+                    l'<b>apice</b> si fa con &ltsup&gt &lt/sup&gt, come nelle note di Wikipedia.
+
+                <div class="code_show"> In late 1886, Tesla met Alfred S. Brown, a Western Union
+                    superintendent, and New York attorney Charles Fletcher Peck.
+                    <sup><a href="https://en.wikipedia.org/wiki/Nikola_Tesla#cite_note-65"
+                            target="_blank">[64]</a></sup>
+                </div>
+
+                Il <b id="pedix">pedice</b> si fa con &ltsub&gt &lt/sub&gt.
+
+                <div class="code_show">CO<sub>2</sub></div>
+
+                </p>
+            </article>
+
+            <hr>
+            <article>
+                <h2 id="tables">Tables<span><a href="#top" class="gobacklink">[Go
+                            back]</a></span></h2>
+                <p class="article">Costruire una semplice tabella in HTML è <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">piuttosto
+                        semplice</a>. Con pochi elementi e poche regole sintattiche è possibile mettere in ordine i
+                    nostri
+                    dati...tutt'altro discorso è renderli belli a vedersi!</p>
+
+                <h3 id="simple-table">Build a simple table</h3>
+                <p>Partiamo dal principio. Per costruire una tabella, dobbiamo innanzitutto creare il suo "contenitore",
+                    tramite l'elemento &lttable&gt &lt/table&gt.</p>
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &lttable&gt
+
+                        &lt/table&gt
+                    </pre>
+                </div>
+                <p>Ogni tabella è costituita da alcuni elementi base di cui non si può fare a meno.
+                <ul>
+                    <li><b>Table head</b>: che definisce le righe di intestazione della tabella e si ottiene con
+                        &lthead&gt &lt/head&gt. Contiene:
+                        <ul>
+                            <li><b>Table row</b>: &lttr&gt &lt/tr&gt, un contenitore all'interno di thead, definisce i
+                                contenuti dell'intestazione di tabella. Si usa quindi un solo <i>tr</i> per table head
+                                <ul>
+                                    <li><b>Table cells</b>: &ltth&gt &lt/th&gt, tanti quante sono le colonne della
+                                        tabella,
+                                        quindi tante quante sono le celle di <i>thead</i>. Definisce il contenuto di
+                                        ogni
+                                        cella di intestazione della tabella. Si posiziona all'interno di <i>th</i>.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> <b>Table body</b>: al suo interno va inserito il contenuto della tabella. Si ottiene con
+                        &lttbody&gt &lt/tbody&gt. L'elemento tbody contiene tante <i>tr</i> che a loro volta contengono
+                        i <i>td</i>:
+                        <ul>
+                            <li><b>tr</b>: &lttr&gt &lt/tr&gt, righe della tabella. Questa volta sono le righe vere e
+                                proprie in cui sarà
+                                contenuto il testo della tabella.</li>
+                            <li><b>td</b>: &lttd&gt &lt/td&gt, le colonne della tabella, il cui numero è uguale a quello
+                                delle <i>tr</i> in
+                                table head</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+                <p>Proviamo adesso a costruire delle semplici tabelle con queste indicazioni.</p>
+
+                <h4>Table 1. Simple table with header</h4>
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &lttable&gt
+                        &ltthead&gt
+                        &lttr&gt
+                        &ltth&gtName&lt/th&gt
+                        &ltth&gtSurname&lt/th&gt
+                        &lt/tr&gt
+                        &lt/thead&gt
+
+                        &lttbody&gt
+                        &lttr&gt
+                        &lttd&gtMario&lt/td&gt
+                        &lttd&gtRossi&lt/td&gt
+                        &lt/tr&gt
+                        &lttr&gt
+                        &lttd&gtGiovanni&lt/td&gt
+                        &lttd&gtVerdi&lt/td&gt
+                        &lt/tr&gt
+                        &lt/tbody&gt
+                        &lt/table&gt
+                    </pre>
+                </div>
+                <p>La tabella sarà quindi:</p>
+                <div class="code_show" id="code_show_table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Surname</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Mario</td>
+                                <td>Rossi</td>
+                            </tr>
+                            <tr>
+                                <td>Giovanni</td>
+                                <td>Verdi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <h4>Table 2. Table with more rows and columns</h4>
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &lttable>
+                        &ltthead>
+                        &lttr&gt
+                        &ltth&gtCountry&lt/th&gt
+                        &ltth&gtCapitol city&lt/th&gt
+                        &ltth&gtPopulation&lt/th&gt
+                        &ltth&gtCurrency&lt/th&gt
+                        &lt/tr&gt
+                        &lt/thead&gt
+
+                        &lttbody&gt
+                        &lttr&gt
+                        &lttd&gtUSA&lt/td&gt
+                        &lttd&gtWashington&lt/td&gt
+                        &lttd&gt328,239,523&lt/td&gt
+                        &lttd&gtDollar&lt/td&gt
+                        &lt/tr&gt
+                        &lttr&gt
+                        &lttd&gtItaly&lt/td&gt
+                        &lttd&gtRome&lt/td&gt
+                        &lttd&gt60,317,11&lt/td&gt
+                        &lttd&gtEuro&lt/td&gt
+                        &lt/tr&gt
+                        &lttr&gt
+                        &lttd&gtIceand&lt/td&gt
+                        &lttd&gtReykjavík&lt/td&gt
+                        &lttd&gt364,134&lt/td&gt
+                        &lttd&gtIcelandic króna&lt/td&gt
+                        &lt/tr&gt
+                        &lt/tbody&gt
+                        &lt/table&gt
+                    </pre>
+                </div>
+                <p>La tabella sarà quindi:</p>
+                <div class="code_show">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Country</th>
+                                <th>Capitol city</th>
+                                <th>Population</th>
+                                <th>Currency</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>USA</td>
+                                <td>Washington</td>
+                                <td>328,239,523</td>
+                                <td>Dollar</td>
+                            </tr>
+                            <tr>
+                                <td>Italy</td>
+                                <td>Rome</td>
+                                <td>60,317,11</td>
+                                <td>Euro</td>
+                            </tr>
+                            <tr>
+                                <td>Iceand</td>
+                                <td>Reykjavík</td>
+                                <td>364,134</td>
+                                <td>Icelandic króna</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>Table 3. Rowspan and Colspan</h4>
+                <p>Può succedere che la larghezza di default delle colonne non sia "sufficiente" e la tabella venga
+                    visualizzata in maniera non ottimale come in qusto esempio<sup>3</sup>.</p>
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &lttable&gt
+                        &ltthead&gt
+                        &lttr&gt
+                        &ltth&gtAnimal&lt/th&gt
+                        &ltth&gtAverage Mass [kg (lb)]&lt/th&gt
+                        &ltth&gtFlighted&lt/th&gt
+                        &lt/tr&gt
+                        &lt/thead&gt
+                        &lttbody&gt
+                        &lttr&gt
+                        &lttd&gtOstrich&lt/td&gt
+                        &lttd&gt104 (203)&lt/td&gt
+                        &lttd&gtNo&lt/td&gt
+                        &lt/tr&gt
+                        &lttr&gt
+                        &lttd&gtSomali Ostrich&lt/td&gt
+                        &lttd&gt90 (200)&lt/td&gt
+                        &lttd&gtNo&lt/td&gt
+                        &lt/tr&gt
+                        &lttr&gt
+                        &lttd&gtWild Turkey&lt/td&gt
+                        &lttd&gt13,5 (29,8)&lt/td&gt
+                        &lttd&gtYes&lt/td&gt
+                        &lt/tr&gt
+                        &lt/tbody&gt
+                        &lt/table&gt
+                    </pre>
+                </div>
+                <p>La tabella sarà quindi:</p>
+                <div class="code_show">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Animal</th>
+                                <th>Average Mass [kg (lb)]</th>
+                                <th>Flighted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ostrich</td>
+                                <td>104 (203)</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Somali Ostrich</td>
+                                <td>90 (200)</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Wild Turkey</td>
+                                <td>13,5 (29,8)</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>In questo caso vediamo che l'intestazione della tabella e le colonne sono allineate male. Possiamo
+                    usare
+                    gli attributi <i>rowspan</i> e <i>colspan</i> per migliorare la tabella.</p>
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &lttable&gt
+                        &ltthead&gt
+                        &lttr&gt
+                        &ltth rowspan="2"&gtAnimal&lt/th&gt
+                        &ltth colspan="2"&gtAverage Mass [kg (lb)]&lt/th&gt
+                        &ltth rowspan="2"&gtFlighted&lt/th&gt
+                        &lt/tr&gt
+                        &lttr&gt
+                        &ltth&gtKG&lt/th&gt
+                        &ltth&gtLB&lt/th&gt
+                        &lt/tr&gt
+                        &lt/thead&gt
+                        &lttbody&gt
+                        .
+                        .
+                        .
+                        &lt/tbody&gt
+                        &lt/table&gt
+                    </pre>
+                </div>
+                <p>E otterremo quindi:</p>
+                <div class="code_show">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Animal</th>
+                                <th colspan="2">Average Mass </th>
+                                <th rowspan="2">Flighted</th>
+                            </tr>
+                            <tr>
+                                <th>KG</th>
+                                <th>LB</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ostrich</td>
+                                <td>104</td>
+                                <td>203</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Somali Ostrich</td>
+                                <td>90</td>
+                                <td>200</td>
+                                <td>No</td>
+                            </tr>
+                            <tr>
+                                <td>Wild Turkey</td>
+                                <td>13,5</td>
+                                <td>29,8</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Il risultato non è ancora perfetto ma abbiamo migliorato parecchio l'ordinamento delle colonne.
+                </p>
+                <p>Proviamo a capire cos'è successo:
+                <ul>
+                    <li><b>
+                            &ltth rowspan="2"&gtAnimal&lt/th&gt
+                        </b>: la cella Animal deve occupare lo spazio di 2 righe e il suo contenuto deve essere
+                        distribuito su due righe, per occupare centralmente lo spazio che verrà occupato da Average Mass
+                    </li>
+                    <li><b>
+                            &ltth colspan="2"&gtAverage Mass&lt/th&gt
+                        </b>: la colonna Average Mass deve occupare lo spazio di 2 colonne, una per Kg e una per Lb
+                    </li>
+                    <li><b>
+                            &ltth rowspan="2"&gtFlighted&lt/th&gt
+                        </b>: la cella Flighted deve occupare lo spazio di 2 righe, per occupare centralmente lo spazio
+                        che verrà
+                        occupato da Average Mass </li>
+                    <li>La seconda riga dell'elemento che ha solo 1 riga (Average Mass) verrà occupata da Kg e Lb</li>
+                </ul>
+                </p>
+                <p>&ltrowspan&gt e &ltcolspan&gt servono rispettivamente ad indicare quante righe o colonne dovrà essere
+                    "grande" un certo elemento.</p>
+                <div class="sub_container">
+                    <sup>3 le tabelle sono state realizzate come esercitazione live durante il corso <a
+                            href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank">Web
+                            Developer
+                            Bootcamp di Colt
+                            Steele</a></sup>
+                </div>
+                <p>Ci sono anche degli <b>elementi opzionali</b> che possono essere aggiunti ad una tabella per
+                    migliorare
+                    l'esperienza utente, come:
+                <ul>
+                    <li><b>Caption &ltcaption&gt &lt/caption&gt</b>: una semplice stringa di testo che aiuta a leggere
+                        la tabella. Caption va inserito all'interno del tag &ltthead&gt.</li>
+                    <li><b>Footer &lttfoot&gt&lt/tfoot&gt</b>: per impostare il <i>footer</i> della tabella come, ad
+                        esempio, quando l'ultima riga è dedicata ai risultati. Il footer della tabella segue le stesse
+                        regole del resto della tabella. Avrà quindi bisogno di un <b>&ltth&gt</b> (<i>Totale</i> nel
+                        nostro
+                        esempio) per la somma valori corrispondente alla prima colonna e di un <b>&lttd&gt</b>
+                        (<i>4,2€</i>
+                        nel nostro esempio) per la somma valori di ogni altra colonna.
+                    </li>
+                </ul>
+                </p>
+                <div class="code_show_noflex">
+
+                    <table>
+                        <caption class="caption">Lista della spesa</caption>
+                        <thead>
+                            <tr>
+                                <th>Articolo</th>
+                                <th>Costo (€)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Banane</td>
+                                <td>3€</td>
+                            </tr>
+                            <tr>
+                                <td>Pane</td>
+                                <td>1,20€</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Totale</th>
+                                <td>4,2€</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                </div>
+            </article>
+
+            <hr>
+            <article>
+                <h2 id="forms">Forms<span><a href="#top" class="gobacklink">[Go
+                            back]</a></span></h2>
+                <p class="article">L'elemento <b>&ltform&gt&lt/form&gt</b> serve a costruire <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">form</a>
+                    (duh!) all’interno
+                    della propria pagina HTML.</p>
+                <p>Esistono vari modi di costruire i form. Si possono seguire le stesse regole viste per le tabelle o
+                    altri
+                    più liberi. Nel secondo caso, bisognerà però prestare più attenzione all'organizzazione degli
+                    elementi interni. </p>
+
+                <h3 id="form_basic elements">Forms basic elements</h3>
+                <p>Bisogna innanzitutto creare l'elemento <b>&ltform&gt&lt/form&gt</b>.</p>
+                <p>Per creare i singoli campi del form, si utilizza l'elemento <b>&ltinput type=""&gt</b> e si
+                    personalizza
+                    la variabile <b>type</b> secondo un set di possibilità predefinite in HTML. </p>
+                <p>Ad alcuni &ltinput&gt possiamo attribuire una <b>&ltlabel&gt&lt/label&gt</b>, cioè il nome che
+                    comparirà
+                    a fianco e aiuterà l'utente e gli screen reader a capire qual è il dato o l'informazione richiesta
+                    in
+                    quel campo.</p>
+
+                <h3 id="forms_table">Forms as tables</h3>
+                <p>Vediamo un esempio di <b>form creato con gli stessi elementi di una tabella</b>.</p>
+                <div class="code_show_noflex">
+                    <table id="table-form">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Password</th>
+                                <!-- <th colspan="2">Colore preferito</th> -->
+                                <!-- <th colspan="2">Data di nascita</th> -->
+                                <th>Età</th>
+                                <th colspan="2">Newsletter subscription</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <form action="/tacos">
+                                    <td><input type="text" placeholder="Nome proprio"></td>
+                                    <td><input type="password" placeholder="Password"></td>
+                                    <!-- <td><label for="color">Scegli un colore</label></td> -->
+                                    <!-- <td><input type="color" id="color"></td> -->
+                                    <!-- <td><label for="date">Devi essere maggiorenne</label></td>
+                                <td><input id="date" type="date" placeholder="La tua data di nascita"></td> -->
+                                    <td><input type="number" placeholder="La tua età"></td>
+                                    <td><label for="Newsletter">Inserisci la tua mail</label></td>
+                                    <td><input id="Newsletter" type="text" placeholder="La tua e-mail"></td>
+                                </form>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>Il form è stato costruito così:</p>
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltthead&gt
+                        &lttr&gt
+                        &ltth&gtNome&lt/th&gt
+                        &ltth&gtPassword&lt/th&gt
+                        &ltth&gtEtà&lt/th&gt
+                        &ltth colspan="2"&gtNewsletter subscription&lt/th&gt
+                        &lt/tr&gt
+                        &lt/thead&gt
+
+                        &lttbody&gt
+                        &lttr&gt
+                        &ltform action="/tacos"&gt
+                        &lttd&gt&ltinput type="text" placeholder="Nome proprio"&gt&lt/td&gt
+                        &lttd&gt&ltinput type="password" placeholder="Password"&gt&lt/td&gt
+                        &lttd&gt&ltinput type="number" placeholder="La tua età"&gt&lt/td&gt
+                        &lttd&gt&ltlabel for="Newsletter"&gtInserisci la tua mail&lt/label&gt&lt/td&gt
+                        &lttd&gt&ltinput id="Newsletter" type="text" placeholder="La tua e-mail"&gt&lt/td&gt
+                        &lt/form&gt
+                        &lt/tr&gt
+                        &lt/tbody&gt
+                    </pre>
+                </div>
+                <p>Per creare l'impalcatura del form possiamo utilizzare <b>thead</b> (con i suoi
+                    elementi <i>tr</i> e <i>th</i>) e <b>tbody</b> (con i suoi elementi <i>tr</i> e <i>td</i>).</p>
+                <p>Quindi le intestazioni <i>Nome</i>, <i>Password</i>, <i>Età</i>, <i>Newsletter</i> sono state
+                    impostate
+                    come th nel tr della table, mentre per i singoli campi è stato usato un <i>input</i> all'interno di
+                    ciascun td (tbody / tr / form / td).</p>
+                <p>Attenzione al campo <i>Newsletter subscription</i>! Volendo inserire anche una label, in thead / tr /
+                    th
+                    è stato dichiarato un colspan="2".</p>
+
+                <h3 id="forms_as_form">Forms as...forms!</h3>
+                <p>Proviamo adesso a creare un form <b>senza sfruttare l'architettura della tabella</b>.</p>
+                <div class="code_show_noflex">
+                    <form action="">
+                        <label for="name">First name</label>
+                        <input type="text" name="name" id="name" placeholder="what's your name?">
+                        <label for="age">Your age</label>
+                        <input type="number" placeholder="what's your age?">
+                        <label for="email">Your e-mail</label>
+                        <input type="email" placeholder="write here your e-mail">
+                    </form>
+                </div>
+                <p>Il risultato è identico e le intestazioni di ogni cella possono facilmente essere realizzate con CSS.
+                </p>
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltform action=""&gt
+
+                        &ltlabel for="name">First name&lyt/label&gt
+                        &ltinput type="text" name="name" id="name" placeholder="what's your name?"&gt
+
+                        &ltlabel for="age"&gtYour age&lyt/label&gt
+                        &ltinput type="number" placeholder="what's your age?"&gt
+
+                        &ltlabel for="email"&gtYour e-mail&lt/label&gt
+                        &ltinput type="email" placeholder="write here your e-mail"&gt
+
+                        &lt/form&gt
+                    </pre>
+                </div>
+
+                <h3 id="form_customize">Forms customization</h3>
+                <p>L'elemento <b>form</b> di HTML è personalizzabile attraverso alcune impostazioni pre-definite.</p>
+                <p>Gli elementi essenziali di <b>input</b> sono:
+                <ul>
+                    <li><b>type</b> che può essere:
+                        <ul>
+                            <li><i>text</i>: per inserire del semplice testo (come ad esempio il nome e cognome)</li>
+                            <li><i>password</i>
+                                che non mostra il testo inserito</li>
+                            <li><i>color</i>: selettore di colore utilizzabile dall'utente</li>
+                            <li><i>date</i>: selettore di data</li>
+                            <li><i>number</i>: selettore numerico. Se un input è di tipo number si possono anche
+                                impostare i valori min=" " max=" " per impedire che il campo assuma valori al di fuori
+                                di un
+                                range predefinito. </li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li><b>placeholder</b> per mostrare il testo all'interno della casella che va compilata dall'utente
+                    </li>
+                    <li><b>id</b> per attribuire un id univoco a quell'input e richiamarlo successivamente</li>
+                    <li><b>pattern</b> per decidere che tipo di caratteri può inserire l'utente (ad esempio nei campi
+                        password)
+                    </li>
+                    <li><b>title</b> per mostrare un box pop-up all'utente con le indicazioni di compilazione</li>
+                </ul>
+                </p>
+
+                <p>E' anche possibile obbligare l'utente a compilare un campo, inibendo l'invio del modulo tramite
+                    l'attributo <b>required</b> dell'elemento <i>input</i>. L'attributo <i>required</i> può essere
+                    associato
+                    a uno, a più o a tutti gli elementi del form. </p>
+                <p>All'interno di <b>label</b>, l'attributo <b>for</b> deve sempre essere uguale a <b>id</b> di input.
+                </p>
+
+                <h3 id="checkboxes_radio_selectos">Checkboxes, radio buttons and selects</h3>
+                <h4 id="checkbox">Checkboxes</h4>
+                <p>All'interno di un form, i <b>checkboxes</b> (eg. normativa privacy) si costruiscono con &ltinput
+                    type=&quot;checkbox&quot&gt.</p>
+                <p>Si può aggiungere anche <i>checked</i> all'interno di input: &ltinput type=&quot;checkbox&quot;
+                    <b>checked</b>&gt, per mostrare il box già selezionato.
+                </p>
+                <p> E' sempre bene aggiungere anche il comando <b>label</b> per indicare di che tipo di input si tratta
+                    e a
+                    cosa si riferisce: &ltlabel&gt&lt/label&gt.
+                </p>
+
+                <div class="code_show">
+                    <form action="">
+                        <label for="HTML">Etichetta 1</label>
+                        <input type="checkbox" name="HTMLnotes" id="HTML">
+                        <label for="HTML">Etichetta 2</label>
+                        <input type="checkbox" name="HTMLnotes" id="HTML">
+                        <label for="HTML">Etichetta 3</label>
+                        <input type="checkbox" name="HTMLnotes" id="HTML" checked>
+                    </form>
+                </div>
+
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltform action=""&gt
+                        &ltlabel for="HTML"&gtEtichetta 1&lt/label&gt
+                        &ltinput type="checkbox" name="HTMLnotes" id="HTML"&gt
+
+                        &ltlabel for="HTML"&gtEtichetta 2&lt/label&gt
+                        &ltinput type="checkbox" name="HTMLnotes" id="HTML"&gt
+
+                        &ltlabel for="HTML"&gtEtichetta 3&lt/label&gt
+                        &ltinput type="checkbox" name="HTMLnotes" id="HTML" checked&gt
+                        &lt/form&gt
+                    </pre>
+                </div>
+
+                <h4 id="radiobt">Radio buttons</h4>
+                <p>Per inserire i <b>radio button</b> è sufficiente utilizzare &ltinput <i>type</i>="radio"
+                    <i>name</i>="nome uguale per
+                    tutti i button" <i>id</i>="sempre univoco" <i>value</i>="identificativo del valore"&gt.
+                </p>
+                <p>Per ogni radio button va creata anche la <b>label</b> corrispondente. Si devono creare tanti radio
+                    button
+                    quante sono le opzioni.</p>
+                <p>In particolare, l'attributo <b>name=""</b> uguale per tutti i radio button della sezione impedisce la
+                    selezione multipla. </p>
+
+                <div class="code_show">
+                    <form action="">
+                        <label for="rdbt1">Radio bt 1</label>
+                        <input type="radio" name="radiobt" id="rdbt1" value="a">
+                        <label for="rdbt2">Radio bt 2</label>
+                        <input type="radio" name="radiobt" id="rdbt2" value="a">
+                        <label for="rdbt2">Radio bt 3</label>
+                        <input type="radio" name="radiobt" id="rdbt3" value="a" checked>
+                    </form>
+                </div>
+
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltform action=""&gt
+                        &ltlabel for="rdbt1"&gtRadio bt 1&lt/label&gt
+                        &ltinput type="radio" name="radiobt" id="rdbt1" value="a"&gt
+
+                        &ltlabel for="rdbt2"&gtRadio bt 2&lt/label&gt
+                        &ltinput type="radio" name="radiobt" id="rdbt2" value="a"&gt
+
+                        &ltlabel for="rdbt2"&gtRadio bt 3&lt/label&gt
+                        &ltinput type="radio" name="radiobt" id="rdbt3" value="a" checked&gt
+                        &lt/form&gt
+                    </pre>
+                </div>
+
+                <h4 id="dropdownlist">Dropdown list</h4>
+                <p>Per creare una dropdown list si utilizza &ltselect name="nome univoco della lista" id=" univoco per
+                    essere invocato in CSS"&gt&lt/select&gt.</p>
+                <p>Per la <b>lista di opzioni disponibili</b> in dropdown si utilizza &ltoption value="nome elemento"
+                    selected&gt</p>
+
+                <div class="code_show">
+                    <select name="dropdown">
+                        <option value="elemento0" selected>Scegli un elemento</option>
+                        <option value="elemento1">Elemento 1</option>
+                        <option value="elemento2">Elemento 2</option>
+                        <option value="elemento3">Elemento 3</option>
+                        <option value="elemento4">Elemento 4</option>
+                    </select>
+                </div>
+
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltselect name="dropdwn" id="dropdwn"&gt
+
+                        &ltoption value="elemento0" selected>Scegli un elemento&lt/option&gt
+
+                        &ltoption value="elemento1">Elemento 1&lt/option&gt
+
+                        &ltoption value="elemento2">Elemento 2&lt/option&gt
+
+                        &ltoption value="elemento3">Elemento 3&lt/option&gt
+
+                        &ltoption value="elemento4">Elemento 4&lt/option&gt
+
+                        &lt/select&gt
+
+                    </pre>
+                </div>
+
+                <h4 id="barselect">Bar selector</h4>
+                <p>Per creare un <b>selettore a barra di scorrimento</b> si utilizza &ltinput&gt (senza chiusura) con i
+                    seguenti attributi:
+                <ul>
+                    <li><b>type</b>: range</li>
+                    <li><b>name</b>: nome identificativo</li>
+                    <li><b>id</b>: identificativo univoco</li>
+                    <li><b>step</b>: quanti "passi" deve compiere il selettore tra un valore e il prossimo</li>
+                    <li><b>min</b>: 1</li>
+                    <li><b>max</b>: numero massimo di passi che può compiere il selettore</li>
+                </ul>
+                e &ltoutput&gt&lt/output&gt (con chiusura) con i seguenti attributi:
+                <ul>
+                    <li><b>for</b>: uguale al name di input</li>
+                    <li><b>onforminput</b>: value = xxx.valueAsNumber</li>
+                </ul>
+                </p>
+                <p>&ltinput&gt e &ltoutput&gt&lt/output&gt devono essere racchiusi in 2 &ltspan&gt&lt/span&gt, uno
+                    all'inizio prima di input e uno alla fine dopo output.
+                </p>
+
+                <div class="code_show">
+                    <form action="">
+                        <span>Poco</span>
+                        <input type="range" name="selettore" id="selettore" step="2" min="1" max="30">
+                        <output for="selettore" onforminput="selettore.valueAsNumber"></output>
+                        <span>Molto</span>
+                    </form>
+                </div>
+
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltform action=""&gt
+                        &ltspan&gtLittle&lt/span&gt
+
+                        &ltinput type="range" name="selettore" id="selettore" step="2" min="1" max="30"&gt
+
+                        &ltoutput for="selettore" onforminput="selettore.valueAsNumber"&gt&lt/output&gt
+
+                        &ltspan>A lot!&lt/span&gt
+                        &lt/form&gt
+                    </pre>
+                </div>
+
+                <h4 id="validation">Validazione</h4>
+                <p>Per far si che il form dia indicazioni di validazione all'utente bisogna aggiungere alcuni attributi
+                    a < input>:
+                        <ul>
+                            <li><b>required</b>: indica all'utente che il campo è obbligatorio con un pop-up predefinito
+                                dal
+                                browser. Esempio: &ltinput type="text" name="first name" id="first" required&gt
+                            </li>
+                            <li><b>minlength=""</b>: per stabilire il numero minimo di caratteri un certo campo, come ad
+                                esempio la passoword</li>
+                            <li><b>pattern=""</b>: per obbligare l'utente ad inserire una certa varietà di caratteri,
+                                come
+                                nel
+                                caso della password. Esempio: pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{8,}"</li>
+                            <li><b>title</b>: per inserire un messaggio personalizzato di avviso all'utente</li>
+                        </ul>
+                </p>
+                <p>Per la verifica di alcuni campi è sufficiente specificare il tipo di campo in &ltinput
+                    type="email"&gt:
+                <ul>
+                    <li><b>email</b>: il browser impedisce di inviare il form se il testo non comprende la "@"</li>
+                    <li><b>url</b>: il browser impedisce di inviare il form se il testo non comprende "http://"</li>
+                </ul>
+                </p>
+            </article>
+
+            <hr>
+
+            <article>
+                <h2 id="accessibility">Accessibility<a href="#top" class="gobacklink">[Go
+                        back]</a></span></h2>
+
+                <p>And here comes a topic that is maybe one of the most important in any software development technique.
+                    When we talk about <i>accessibility</i> we are referring to methods and techniques that make it
+                    easier
+                    for the user to use and enjoy our product. And this should be the final goal of every serious
+                    programmer.</p>
+                <p><b>Acceessibility</b> is indeed a series of <u>best practices</u> that should be put in place from
+                    the
+                    very beginning of any project. If you don't plan with <b>accessibility in mind</b> it could really
+                    hard
+                    (if not impossible) to add it later without wasting an incredible amount of time and effort, and
+                    event
+                    then I seriously doubt you could reach the same level.</p>
+
+                <h3 id="accheadings">HTML5 Headings</h3>
+                <p>One of the most powerful tools for accessibility in HTML is the <b>heading</b> tag (believe it or
+                    not).
+                </p>
+
+                <p>A proper <b>heading structure</b> help you orgnize your contents better and help assistive
+                    technologies
+                    immediately understand the hierarchical structure of the page. So heading should be carefully
+                    selected
+                    and written, to have semantic meaning. Apart from the obvious hierarchical sequence, the rule of
+                    thumb
+                    is that each web page must have <b>only one &lth1&gt</b>.</p>
+
+                <h3 id="acctags">HTML5 Tags</h3>
+                <p>Let's start with the very beginning. With HMTL5 we know have a some new elements that help us
+                    organize
+                    our page in a better way.</p>
+                <p>Ideally you could use just the &ltdiv&gt element for everything. I'm not saying it's not possible but
+                    that it's absolutely wrong for a number of reasons. Leaving aside for a moment the topics of
+                    <i>semantic
+                        HTML</i> and <i>architecture</i>, using <b>&ltmain&gt</b>, <b>&ltheader&gt</b>,
+                    <b>&ltfooter&gt</b>,
+                    <b>&ltnav&gt</b> and <b>&ltarticle&gt</b> has two main benefits:
+                <ul>
+                    <li><b>Selfish one</b>: if you organize your HTML with a proper structure you will be able to
+                        maintain
+                        it much more easily (if you work alone)</li>
+                    <li><b>Selfless one</b>: the tags' names provide screen readers and other supportive systems to
+                        immediately understand the kind of content they are dealing with. So, for example, if I wrap
+                        something in a &ltnav&gt, assistive technologies recognize it and expect to have some kind of
+                        navigation bar with maybe a menu or a content summary</li>
+                </ul>
+                </p>
+
+                <p>Among those that we have listed before, one that I have learned to love is <b>&ltarticle&gt</b>.
+                    After a
+                    few days of writing these wiki, I realized I needed a proper way to organize the different contents
+                    and
+                    sections. Article came in handy because it's the tag element we all should use to put together
+                    <b>indipendent and self-contained</b> contents that are related to the same topic (exactly as you
+                    would
+                    do in a blog or in a newspaper).
+                </p>
+                <p>Now, if you inspect this page, you'll notice that each self-consistent section is a different article
+                    that can exist outside of this wiki, without loosing its meaning. This way, I could copy-paste
+                    (almost)
+                    each of them and write separate blog posts.</p>
+
+                <p>The rule of thumb here is:
+                <ul>
+                    <li><b>&ltdiv&gt</b>: use it to group contents</li>
+                    <li><b>&ltsection&gt</b>: use it to group related contents</li>
+                    <li><b>&ltarticle&gt</b>: use it to group together indipendent and self-contained contents</li>
+                </ul>
+                </p>
+
+                <p>A final remark should be made for the <b>&ltheader&gt</b> tag (not to be confused with the &lthead&gt
+                    of
+                    a web page). This tag is used to group introductory contents of our page of the <i>navigation
+                        bar</i>
+                    links.
+                </p>
+
+
+                <h3 id="accimage">Accessibility and Images</h3>
+                <p>As you may have notice, when we talked about <a>&ltimg&gt</a> we just mentioned the <b>alt</b>
+                    attribute.
+                    This attribute is of paramount importance for assistive technologies, because it describe the image
+                    by
+                    providing a text-alternative to it. And it can be really usefull also when, for example, an image
+                    fail
+                    to load (for whatever reason).</p>
+                <p>In case of assistive technologies like screen readers, the &ltalt&gt attributes is used as an audio
+                    guide
+                    to describe our picture. Of course the &ltalt&gt attributes shouldn't be longer than a few but
+                    meaningfull words. So, keep it simple and effective.</p>
+
+                <p>There are a few cases, however, when the &ltalt&gt attribute can be <b>omitted</b>:
+                <ul>
+                    <li>When you has already set a <b>caption</b> for the image</li>
+                    <li>When the image is <b>purely decorative</b></li>
+                    <li>When you're setting a <b>background</b></li>
+                </ul>
+                </p>
+
+                <h3 id="accaudio">Audio elements</h3>
+                <p>After images it's time to talk about accessiblity with <b>audio</b> elements. We havenìt examined
+                    this
+                    HTML element in this wiki, but it's fairly simple.</p>
+
+                <p>Audio elements are similar to images in their structure.</p>
+
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltaudio id="" controls&gt
+                        &ltsource src="audio/meow.mp3" type="audio/mpeg"/&gt
+                        &ltsource src="audio/meow.ogg" type="audio/ogg"/&gt
+                        &lt/audio&gt
+                    </pre>
+                </div>
+
+                <p>We have the &ltaudio&gt &lt/audio&gt tag that wraps the content, &ltcontrols&gt that shows play/pause
+                    controls, a &ltsource&gt and a &ltsrc&gt (as in &ltimg&gt) and a &lttype&gt that gives information
+                    about
+                    the type of audio content.</p>
+
+                <p>Just by using these attributes correctly adds a lot to your code in terms of accessibility. Further
+                    help
+                    may come from transcript and/or captions but you, as developer, won't be in charge of them.</p>
+
+                <h3 id="accfig">Fig Element and Caption</h3>
+                <p>We have already talked about caption when we talked about &ltimg&gt. Now we introduce the
+                    <b>&ltfigure&gt</b> element in combination with image caption.
+                </p>
+                <p>Have a look at this image.</p>
+
+                <figure class="tesla">
+                    <img src="img/tesla.jpg" alt="Photo of Nikola Tesla in his studio" id="teslafigure">
+                    <br>
+                    <figcaption>
+                        Nikola Tesla thinking about it's next invention.
+                    </figcaption>
+                </figure>
+
+                <p>You may think this is rendered through a regular &ltimg&gt tag. But this is the true structure of
+                    this
+                    piece of HTML.</p>
+
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltfigure&gt
+                        &ltimg src="img/tesla.jpg" alt="Photo of Nikola Tesla in his studio"&gt
+                        &ltbr&gt
+                        &ltfigcaption&gt
+                        Nikola Tesla thinking about it's next invention.
+                        &lt/figcaption&gt
+                        &lt/figure&gt
+                    </pre>
+                </div>
+
+                <p>As you can see we have used both <b>alt</b> and <b>figcaption</b>. The combination of
+                    <b>&ltfigure&gt</b>
+                    and <b>&ltfigcaption&gt</b> represents a big boost in the accessibility of our page. With elements
+                    like
+                    chart, the <i>caption</i> can be used, for example, to sum up conclusions or findings of the chart.
+                </p>
+
+                <h3 id="acclabel">Label</h3>
+                <p>We have already discussed about the importance of the <b>&ltlabel&gt</b> attribute in tables, forms
+                    and
+                    inputs.
+                </p>
+                <p>What we need to stress here is that the &ltlabel&gt attribute represents an additional help for
+                    assistive
+                    technologies because it makes the content more clear, especially when we are dealing with form
+                    controls
+                    (eg. buttons).</p>
+
+                <h3 id="accfieldset">Fieldset</h3>
+                <p>The <b>fieldset</b> tag is used to wrap a group of radio buttons together in a meaningfull way so
+                    that
+                    assistive technologies can communicate this to users.</p>
+
+                <p>Fieldset is used in combination with <b>legend</b>, which provides an explanation of the buttons
+                    group.
+                </p>
+                <p>This is an example.</p>
+
+                <div class="code_show" id="fieldset">
+                    <form>
+
+                        <fieldset>
+
+                            <legend>Choose among these options:</legend>
+
+                            <input id="one" type="radio" name="items" value="one">
+                            <label for="one">First</label>
+
+                            <input id="two" type="radio" name="items" value="two">
+                            <label for="two">Second</label>
+
+                            <input id="three" type="radio" name="items" value="three">
+                            <label for="three">Third</label>
+
+                        </fieldset>
+
+                    </form>
+
+                </div>
+                <br>
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltform&gt
+
+                        &ltfieldset&gt
+
+                        &ltlegend&gtChoose among these options:&lt/legend&gt
+
+                        &ltinput id="one" type="radio" name="items" value="one"&gt
+                        &ltlabel for="one"&gtFirst&lt/label&gt
+
+                        &ltinput id="two" type="radio" name="items" value="two"&gt
+                        &ltlabel for="two"&gtSecond&lt/label&gt
+
+                        &ltinput id="three" type="radio" name="items" value="three"&gt
+                        &ltlabel for="three"&gtThird&lt/label&gt
+
+                        &lt/fieldset&gt
+
+                        &lt/form&gt
+
+                    </pre>
+                </div>
+
+                <p>As you can see, <b>&ltfieldset&gt</b> has automatically created a border around our radio buttons,
+                    visually and semantically grouping them together, and the <b>&ltlegend&gt</b> is automatically
+                    centered.</p>
+
+                <h3 id="accdate">Date</h3>
+                <p>The next examples are not strictly related to assistive technologies but they are still good examples
+                    of
+                    how, with a few lines of code we can our pages more accessible for users.</p>
+
+                <p><b>Data picker</b> simply does its job by showing an easy to use calendar.</p>
+                <div class="code_show" id="datepicker">
+                    <label for="input1">Enter a date:</label>
+                    <input type="date" id="input1" name="input1">
+                </div>
+
+                <p>Its visual output depends on the browser in use and of course the layout can be modified with CSS.
+                </p>
+
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltlabel for="input1"&gt Enter a date: &lt/label&gt
+                        &ltinput type="date" id="input1" name="input1"&gt
+                    </pre>
+                </div>
+
+
+                <p>The <b>datetime</b> attribute is another method to improve the accessibility of our page. It's an
+                    inline
+                    element that encapsulate date or time on a page in a standardized way. The datetime attribute can be
+                    accessed by assistive technologies.</p>
+
+                <p>When using the <b>datetime</b> attribute you won't see any difference on screen but assistive devices
+                    will be able to "translate" that information in useful messages for the user. Here's an example.</p>
+
+                <div class="code_show" id="datetime">
+                    <p>The next on-line conference will be held on <time datetime="2021-02-20">February the
+                            20<sup>th</sup>,
+                            CET</time>.</p>
+                </div>
+
+                <p>But the actual code behind is this.</p>
+
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltp&gtThe next on-line conference will be held on &lttime datetime="2021-02-20"&gtFebruary the
+                        20&ltsup&gtth&lt/sup&gt,
+                        CET&lt/time&gt.&lt/p&gt
+                    </pre>
+                </div>
+
+
+                <h3 id="accnavlink">Navbar links</h3>
+                <p>To make our page even more accessible, we should offer an alternative to the mouse point-and-click
+                    behaviour to those users that can use only their keyboards.</p>
+                <p>The example we are going to have a look at can be used with any kind of HTML element, but for the
+                    sake of
+                    this wiki we will show how it works only in a navbar.</p>
+
+                <p>The easiest way to <b>make a navbar accessible</b> through the keyboard is to add the
+                    <b>accesskey</b>
+                    attribute, like this.
+                </p>
+
+                <div class="code_ex_wrapper">
+                    <pre>
+                        &ltbutton accesskey="<i>any keyboard letter</i>"&gt Home &lt/button&gt
+                    </pre>
+                </div>
+
+            </article>
+
+
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            <div>This wiki has been built thanks to <a href="#" target="_blank">these great
+                    people</a>.</div>
+            <div class="footer-icon">
+                <p>&#169;.fdv{} 2021</p>
+                <a href="https://github.com/Hicalje"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/federicoferrauto/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
