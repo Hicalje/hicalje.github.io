@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.fdv{} wiki - Home Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="FDV_Home Page.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="#home" id="home">.fdv{} wiki</a>
+    </header>
+
+    <div class="wikibody">
+
+        <div class="wikibody-section">
+            <img src="icons/HTML5.png" alt="html5logo" class="logowiki">
+            <h2 class="wikibody-header">HTML5</h2>
+            <p class="wikibody-description">
+                The HyperText Markup Language, from basic to advanced,
+                with examples and how-tos!
+            </p>
+            <a href="FDV_HTML_sidenavbar.html" class="wiki-button" id="html-button">Let's Start!</a>
+        </div>
+
+        <div class="wikibody-section">
+            <img src="icons/CSS.png" alt="csslogo" class="logowiki">
+            <h2 class="wikibody-header">CSS</h2>
+            <p class="wikibody-description">The language that allows you to create beautiful web
+                sites customizing your HTML code.
+            </p>
+            <a href="FDV_CSS_sidenavbar.html" class="wiki-button" id=css-button>Let's
+                Start!</a>
+        </div>
+
+        <div class="wikibody-section">
+            <img src="icons/JS.png" alt="javascriptlogo" class="logowiki">
+            <h2 class="wikibody-header">Javascript</h2>
+            <p class="wikibody-description">I'd like to have something to say about JS, but I haven't
+                started it yet...stay tuned.
+            </p>
+            <span tabindex="0" data-descr="Javascript section is due to...well, in a few months (I hope)"
+                class="tooltip"><a href="#/" class="wiki-button" id="js-button">Let's
+                    Start!</a></span>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <p> </p>
+    </div>
+    <footer>
+        <div>This wiki has been built thanks to <a href="FDV_Credits2.html">these great
+                people</a>.</div>
+        <div class="footer-icon">
+            <p>&#169;.fdv{} 2021</p>
+            <a href="https://github.com/Hicalje" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/federicoferrauto/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
