@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, .navbar, section {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+body{
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #caf0f8;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Backgrounds/modern-geometrical-wallpaper-with-round-lines_4.png);
+    background-position: cover;
+}
+
+
+/*----------------------------------*/
+/*             NAV BAR              */
+/*----------------------------------*/
+.navbar {
+    width: 100%; 
+    background: #023E8A;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar a{
+    color: white;
+    padding: 5px;
+    border-right: 1px solid white;
+    border-bottom-left-radius: 10px;
+    text-decoration: none; 
+}
+
+/*----------------------------------*/
+/*             PAGE BODY            */
+/*----------------------------------*/
+
+.wikibody {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 70%;
+    padding: 2em;
+    box-shadow: 2px 10px 18px #023e8a;
+}
+
+.wikibody-section {
+    width: 33%;
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+}
+
+
+.wikibody-section:last-child {
+    border-right: none;
+}
+
+.logowiki {
+    margin: 10px;
+    max-width: 30%;
+}
+
+.wikibody-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.wikibody-description {
+    color: #023e8a;
+    border-bottom: 1px solid #e1f1ff;
+    height: 10%;
+    width: 90%;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px 0;
+    margin: auto;
+}
+
+ul.wikibody-description {
+    margin: 0;
+    padding: 0;
+}
+
+.wikibody-description-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px 0;
+    margin: auto;
+}
+
+.wiki-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    bottom: 2em;
+}
+
+#html-button,
+#css-button {
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.tooltip[data-descr] {
+    position: relative;
+    cursor: wait;
+}
+
+.tooltip[data-descr]:hover::after {
+    content: attr(data-descr);
+    position: absolute;
+    left: -80px;
+    top: 50px;
+    min-width: 300px;
+    border-radius: 10px;
+    background-color: rgb(255, 186, 8, 0.8);
+    padding: 0.2em;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    z-index: 1;
+    padding: 0.7em;
+    line-height: 1.6em;
+
+}
+
+/*----------------------------------*/
+/*             FOOTER               */
+/*----------------------------------*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #023E8A;
+}
+
+footer div {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+footer div > a {
+    color: white;
+}
+
+footer i {
+    color: white;
+    font-size: 2em;
+    margin-right: 0.5em;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon > p {
+    color: white;
+    font-size: 1em;
+    margin-right: 0.5em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/*----------------------------------*/
+/*             STYLING              */
+/*----------------------------------*/
+
+#html-button:hover,
+#css-button:hover {
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+#html-button:hover {
+    background-color: #e54e26;
+}
+
+#css-button:hover {
+    background-color: #016fbb;
+}
+
+/*----------------------------------*/
+/*          MEDIA QUERIES           */
+/*----------------------------------*/
+
+@media only screen and (max-width: 478px) {
+    .wikibody {
+        flex-direction: column;
+        margin-top: 3em;
+        margin-bottom: 8em;
+        width: 85%;
+        padding: 1em;
+    }
+
+    .wikibody-section {
+        width: 90%;
+        border-right: none;
+        margin-bottom: 2em;
+    }
+
+    .tooltip[data-descr]:hover::after {
+        left: -85px;
+        top: 65px;
+    }
+}
+
+@media screen and (min-width: 479px) and (max-width: 768px) {
+    .wikibody {
+        flex-direction: column;
+        margin-top: 3em;
+        margin-bottom: 8em;
+        width: 85%;
+        padding: 1em;
+    }
+
+    .wikibody-section {
+        width: 90%;
+        border-right: none;
+        margin-bottom: 2em;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .wikibody {
+        margin-top: 3em;
+        margin-bottom: 6em;
+        width: 90%;
+        padding: 0.5em;
+    }
+
+    .wikibody-description {
+        letter-spacing: 1px;
+        font-size: 15px;
+    }
+
+    .tooltip[data-descr]:hover::after {
+        left: -95px;
+        top: 40px;
+    }
+
+    footer div {
+        font-size: 0.9em;
+    }
+
+    .wiki-button {
+        padding: 10px 30px;
+    }
+}
